@@ -64,6 +64,14 @@ PhishVision/
 ├── run_backend.sh             # Unix shell script to start backend
 └── model.js                   # Additional model utilities
 ```
+###📷 Screenshots
+
+![image](https://github.com/user-attachments/assets/5c6b00d3-21a8-4d92-ab55-8c372fe91626)
+
+![image](https://github.com/user-attachments/assets/5d6329e8-e639-49f8-933b-7d5ebc519515)
+
+![image](https://github.com/user-attachments/assets/73c5d5b9-5d44-4662-bee7-86686be8ea6e)
+
 
 ## 🛠️ Installation & Setup
 
