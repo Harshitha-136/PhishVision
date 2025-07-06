@@ -16,20 +16,53 @@ PhishVision is a Chrome extension that detects phishing websites in real-time us
 
 ```
 PhishVision/
-├── extension/              # Chrome Extension files
-│   ├── manifest.json       # Extension manifest (Manifest V3)
-│   ├── background.js       # Background script for URL analysis
-│   ├── content.js          # Content script for URL detection
-│   ├── popup.html          # Extension popup UI
-│   ├── popup.js            # Popup functionality
-│   ├── style.css           # Extension styles
-│   └── icon.png            # Extension icon
-├── backend/                # Flask backend
-│   ├── app.py              # Main Flask application
-│   └── [other ML files]    # Additional ML components
-├── requirements.txt        # Python dependencies
-├── start_backend.bat       # Windows startup script
-└── README.md              # This file
+├── backend/                    # Backend API and ML components
+│   ├── app.py                 # Main Flask application
+│   ├── feature_extraction.py  # URL feature extraction module
+│   ├── generate_dataset.py    # Dataset generation script
+│   ├── train_model.py         # Model training script
+│   ├── run_phishvision.py     # Automated setup script
+│   ├── simple_test.py         # Basic testing script
+│   ├── test_request.py        # API request testing
+│   ├── test_system.py         # System integration tests
+│   ├── phishing_dataset.csv   # Generated training dataset
+│   ├── phishing_model.pkl     # Trained ML model
+│   ├── README.md              # Backend documentation
+│   ├── SYSTEM_STATUS.md       # System status and logs
+│   └── venv/                  # Python virtual environment
+│
+├── extension/                  # Chrome extension files
+│   ├── manifest.json          # Extension manifest
+│   ├── popup.html             # Extension popup interface
+│   ├── popup.js               # Popup functionality
+│   ├── background.js          # Background script
+│   ├── content.js             # Content script for page interaction
+│   ├── style.css              # Extension styling
+│   ├── icon.png               # Extension icon (128x128)
+│   ├── icon_16.png            # Small icon (16x16)
+│   ├── icon_48.png            # Medium icon (48x48)
+│   └── create_icon.html       # Icon creation utility
+│
+├── dashboard/                  # Web dashboard (optional)
+│   ├── index.html             # Dashboard interface
+│   └── log.js                 # Logging functionality
+│
+├── utils/                      # Utility modules
+│   ├── url_cleaner.py         # URL cleaning utilities
+│   ├── whois_checker.py       # WHOIS lookup functionality
+│   └── feature_list.txt       # Feature definitions
+│
+├── README.md                   # Main project documentation
+├── INSTALLATION.md            # Installation guide
+├── PROJECT_SUMMARY.md         # Project overview
+├── FINAL_STATUS.md            # Final project status
+├── requirements.txt           # Python dependencies
+├── create_icon.py             # Icon generation script
+├── test_backend.py            # Backend integration tests
+├── test_phishing.html         # HTML test page
+├── start_backend.bat          # Windows batch file to start backend
+├── run_backend.sh             # Unix shell script to start backend
+└── model.js                   # Additional model utilities
 ```
 
 ## 🛠️ Installation & Setup
